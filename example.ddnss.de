@@ -1,0 +1,5 @@
+DDNS_URL="https://ddnss.de/udp.php?key=<pass>&host=<domain>&ip=<ipaddr>&ip6=<ip6addr>"
+
+DDNS_HOST="example.ddnss.de"
+DDNS_PASS="secret_key"
+
