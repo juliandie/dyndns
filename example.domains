@@ -1,0 +1,30 @@
+AnyDNS.info
+https://anydns.info/update.php?user=<user>&password=<pass>&host=<host>&ip=<ipaddr>&ip6=<ip6addr>
+
+ddnss.de
+https://www.ddnss.de/upd.php?user=<user>&pwd=<pass>&host=<host>&ip=<ipaddr>&ip6=<ip6addr>
+
+Dnshome.de
+https://www.dnshome.de/dyndns.php?ip=<ipaddr>; https://www.dnshome.de/dyndns.php?ip=<ip6addr>
+
+DuckDNS.org
+https://www.duckdns.org/update?domains=<host>&token=<pass>&ip=<ipaddr>&ipv6=<ip6addr>
+
+Dyn.com
+https://<user>:<pass>@members.dyndns.org/v3/update?hostname=<host>&myip=<ipaddr>,<ip6addr>
+
+Dyndnsfree.de
+https://dynup.de/update.php?hostname=<host>&ipv4=<ipaddr>&ipv6=<ip6addr>
+
+IPv64.net
+https://ipv64.net/nic/update?key=<pass>&domain=<host>&ip=<ipaddr>&ip6=<ip6addr>
+
+No-IP.com
+https://dynupdate.no-ip.com/nic/update?hostname=<host>&myip=<ipaddr>,<ip6addr>
+
+selfhost.de
+https://carol.selfhost.de/nic/update?myip=<ipaddr>&host=<host>; https://carol.selfhost.de/nic/update?myip=<ip6addr>&host=<host>
+
+STRATO.de
+https://<user>:<pass>@dyndns.strato.com/nic/update?hostname=<host>&myip=<ipaddr>,<ip6addr>
+

@@ -1,6 +1,6 @@
-DDNS_URL="https://<username>:<pass>@dyndns.strato.com/nic/update?hostname=<host>&myip=<ipv4>,<ipv6>"
+DDNS_URL="https://<user>:<pass>@dyndns.strato.com/nic/update?hostname=<host>&myip=<ipv4>,<ipv6>"
 
-DDNS_HOST="example.de" # subdomain.example.de
+DDNS_HOST="example.de"
 DDNS_USER="example.de"
 DDNS_PASS="secret_password"
 
