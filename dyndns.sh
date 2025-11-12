@@ -45,7 +45,7 @@ while [ "$#" -gt 0 ]; do
 done
 
 if [ -n "${DYNDNS_CFG}" ]; then
-    # shellcheck source=./ddnsu.example.ddnss.de
+    # shellcheck source=./example.ddnss.de
     source "${DYNDNS_CFG}"
 fi
 
@@ -115,7 +115,7 @@ if [ "${DYNDNS_DRYRUN}" == "true" ]; then
     echo "${DYNDNS_URL}"
 else
     if [ "${DYNDNS_UP4}" == "1" ] || [ "${DYNDNS_UP6}" == "1" ]; then
-        echo $(curl -s "${DYNDNS_URL}")
+        curl -s "${DYNDNS_URL}"
     fi
 fi
 
