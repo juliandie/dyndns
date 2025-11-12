@@ -7,6 +7,8 @@ update the ip address, using the dyn dns api.
 
 # configuration parameters
 
+A configuration file can define following variables if required.
+
 ## DYNDNS_NS
 
 A custom nameserver that is used to verify the current dyn-dns address
@@ -35,4 +37,7 @@ In the DYNDNS_URL, the <pass> parameter will be replaced with this value.
 # crontab example
 
 Test every 10 minutes, if the ip has been changed
+```
 */10 * * * * /usr/bin/dyndns.sh -c /etc/dyndns.d/domainname
+```
+
