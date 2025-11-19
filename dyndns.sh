@@ -10,6 +10,8 @@ DYNDNS_HOST=""
 DYNDNS_USER=""
 DYNDNS_PASS=""
 DYNDNS_DRYRUN="false"
+DYNDNS_IGNORE_IPV4="false"
+DYNDNS_IGNORE_IPV6="false"
 
 function show_help() {
     echo "usage: ${BASENAME} [-v] -u <user> -i <password> -h <host1> -h <host2> -d <url>"
@@ -102,10 +104,15 @@ function ip_test() {
     fi
 }
 
-ip_test -4
-DYNDNS_UP4="$?"
-ip_test -6
-DYNDNS_UP6="$?"
+if [ "${DYNDNS_IGNORE_IPV4}" == "false" ]; then
+    ip_test -4
+    DYNDNS_UP4="$?"
+fi
+
+if [ "${DYNDNS_IGNORE_IPV6}" == "false" ]; then
+    ip_test -6
+    DYNDNS_UP6="$?"
+fi
 
 DYNDNS_URL="$(echo "${DYNDNS_URL}" | sed -E 's/<user>/'"${DYNDNS_USER}"'/g')"
 DYNDNS_URL="$(echo "${DYNDNS_URL}" | sed -E 's/<pass>/'"${DYNDNS_PASS}"'/g')"
