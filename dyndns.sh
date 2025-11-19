@@ -2,6 +2,11 @@
 
 BASENAME="$(basename "$0")"
 
+if [ -z "$(which dig)" ]; then
+    echo "Please install bind9-dnsutils (or a package that provides dig)"
+    exit 1
+fi
+
 # Init variables
 DYNDNS_NS="1.1.1.1"
 #DYNDNS_CFG=""
